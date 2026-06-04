@@ -37,3 +37,5 @@
 /画像
 /音楽
 /projects/biliLive-tools
+__pycache__/
+*.pyc
