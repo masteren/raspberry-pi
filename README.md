@@ -8,5 +8,5 @@ Raspberry Pi で GPIO やセンサーを動かす授業の課題・練習用プ�
 | [gpio_button_led_toggle](gpio_button_led_toggle/) | タクトスイッチで LED をオン／オフ切り替え |
 | [gpio_distance](gpio_distance/) | 距離センサー GP2Y0A02 ＋ AD コンバータ MCP3208（SPI） |
 | [kyori](kyori/) | 距離センサーの練習用コピー |
-| [ondo](ondo/) | 温度・湿度センサー DHT11、課題5（CSV 記録） |
+| [ondo](ondo/) | 温度・湿度センサー DHT11、課題5（CSV 記録）、課題6（Web版 温度・湿度監視システム） |
 | [plus1to5.py](plus1to5.py) | Python の for 文の練習 |
