@@ -8,6 +8,7 @@ DHT11 で温度と湿度を計測するプログラムと、その記録をブ�
 - `kadai5.py`: 課題5。1 分ごとに計測して `kadai5.csv` に追記保存する
 - `kadai5.csv`: `kadai5.py` で記録した計測データ（時刻, 温度[℃], 湿度[%]）
 - `web/`: 課題6。Web版 温度・湿度監視システム（下記参照）
+- `docs/screenshot.png`: 課題6の画面のスクリーンショット
 - `dht11/`: DHT11 読み取り用ライブラリ（配布資料の `dht11_sample.zip` より）
 
 ## 接続
@@ -28,6 +29,8 @@ python3 kadai5.py   # 課題5（[Ctrl]+[C] で終了）
 
 課題5の `kadai5.csv` を読み込み、matplotlib でグラフを作ってブラウザに表示します。
 Web サーバは Raspberry Pi 上で `python3 -m http.server --cgi` を使います。
+
+![Web版 温度・湿度監視システムの画面](docs/screenshot.png)
 
 | ファイル | 内容 |
 |---|---|
