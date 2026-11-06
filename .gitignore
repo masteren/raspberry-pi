@@ -5,3 +5,5 @@ __pycache__/
 # 課題6：自動生成されるグラフ画像と提出用zip
 ondo/web/graph.png
 ondo/kadai6.zip
+ondo/*.mov
+ondo/*.mp4
