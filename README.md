@@ -4,17 +4,17 @@ Raspberry Pi で GPIO やセンサーを動かす授業の課題・練習用プ�
 
 ## 課題一覧
 
-| 課題 | 内容 | フォルダ | 使う部品 |
-|:---:|---|---|---|
-| 課題1 | GPIO で LED を 1 秒ごとに点滅 | [gpio_led_blink](gpio_led_blink/) | LED、抵抗 |
-| 課題5 | 温度・湿度を 1 分ごとに計測して CSV に記録 | [ondo](ondo/#課題5温度湿度自動計測システム) | DHT11 |
-| 課題6 | Web版 温度・湿度監視システム（CSV をブラウザでグラフ表示） | [ondo/web](ondo/#課題6web版-温度湿度監視システム) | DHT11 |
+| 課題 | 科目コード | 内容 | フォルダ | 使う部品 |
+|:---:|---|---|---|---|
+| 課題1 | IO19-01 | GPIO で LED を 1 秒ごとに点滅 | [gpio_led_blink](gpio_led_blink/) | LED、抵抗 |
+| 課題2 | IO19-02 | タクトスイッチ 1 個で LED をオン／オフ（オルタネイト型） | [gpio_button_led_toggle](gpio_button_led_toggle/) | LED、タクトスイッチ |
+| 課題5 | IO28-05 | 温度・湿度を 1 分ごとに計測して CSV に記録 | [ondo](ondo/#課題5温度湿度自動計測システム) | DHT11 |
+| 課題6 | IO21-06 | Web版 温度・湿度監視システム（CSV をブラウザでグラフ表示） | [ondo/web](ondo/#課題6web版-温度湿度監視システム) | DHT11 |
 
 ## 練習・サンプル
 
 | フォルダ / ファイル | 内容 | 使う部品 |
 |---|---|---|
-| [gpio_button_led_toggle](gpio_button_led_toggle/) | タクトスイッチで LED をオン／オフ切り替え | LED、タクトスイッチ |
 | [gpio_distance](gpio_distance/) | 距離センサーで距離 [cm] を表示（SPI） | GP2Y0A02、MCP3208 |
 | [kyori](kyori/) | 距離センサーの練習用コピー | GP2Y0A02、MCP3208 |
 | [ondo/sample.py](ondo/sample.py) | DHT11 の動作確認（5 秒ごとに表示） | DHT11 |
@@ -27,6 +27,10 @@ Raspberry Pi で GPIO やセンサーを動かす授業の課題・練習用プ�
 ### 課題1：LED の点滅
 
 GPIO26 に接続した LED を 1 秒ごとに点灯・消灯します。→ [gpio_led_blink](gpio_led_blink/)
+
+### 課題2：スイッチで LED をオン／オフ
+
+タクトスイッチを 1 回押すと LED が点灯し、もう 1 回押すと消灯します（オルタネイト型）。スイッチはプルアップ回路で接続し、割り込みで検出します。→ [gpio_button_led_toggle](gpio_button_led_toggle/)
 
 ### 課題5：温度・湿度自動計測システム
 
@@ -74,7 +78,7 @@ python3 kadai5.py           # 実行（Ctrl+C で終了）
 ```
 raspberry-pi/
 ├── gpio_led_blink/           【課題1】LED 点滅
-├── gpio_button_led_toggle/   練習：スイッチで LED 切り替え
+├── gpio_button_led_toggle/   【課題2】スイッチで LED 切り替え
 ├── gpio_distance/            練習：距離センサー
 ├── kyori/                    練習：距離センサー（コピー）
 ├── ondo/                     温度・湿度センサー DHT11
